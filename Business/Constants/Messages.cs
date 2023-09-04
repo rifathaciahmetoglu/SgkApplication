@@ -27,6 +27,8 @@ namespace Business.Constants
         public static string DocumentUpdated = "Döküman Güncellendi";
         public static string DocumentDeleted = "Döküman Silindi";
         public static string DocumentListed = "Dökümanlar Listelendi";
+        public static string CompanyNameAlreadyExists="Şirket Adı Zaten Mevcut";
+        public static string CompanyShortNameAlreadyExists="Şirket Kısa Adı Zaten Mevcut";
         #endregion
 
     }
