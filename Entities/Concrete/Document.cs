@@ -1,7 +1,7 @@
 ﻿using Core.Entities;
 using System;
 
-namespace Entities
+namespace Entities.Concrete
 {
     public class Document : IEntity
     {

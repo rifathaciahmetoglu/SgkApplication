@@ -1,9 +1,12 @@
 ﻿using Core.Entities;
 using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading;
 
-namespace Entities
+namespace Entities.Concrete
 {
-    public class Note : IEntity
+    public class UserLog : IEntity
     {
         public int Id { get; set; }
         public int UserId { get; set; }

@@ -1,6 +1,6 @@
 ﻿using Core.Entities;
 
-namespace Entities
+namespace Entities.Concrete
 {
     public class StaffJob : IEntity
     {
