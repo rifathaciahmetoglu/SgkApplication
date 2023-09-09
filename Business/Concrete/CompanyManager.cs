@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.BusinessAspects.Autofac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
@@ -20,6 +21,7 @@ namespace Business.Concrete
             _companyDal = companyDal;
         }
 
+        [SecuredOperation("admin")]
         [ValidationAspect(typeof(CompanyValidator))]
         public IResult Add(Company company)
         {
