@@ -32,9 +32,9 @@ namespace Business.Constants
         public static string CompanyShortNameAlreadyExists="Şirket Kısa Adı Zaten Mevcut";
         #endregion
 
+
+        #region User
         internal static string UserAdded="Kullanıcı Eklendi";
-
-
         public static string UserNotFound = "Kullanıcı bulunamadı";
         public static string PasswordError = "Şifre hatalı";
         public static string SuccessfulLogin = "Sisteme giriş başarılı";
@@ -42,5 +42,43 @@ namespace Business.Constants
         public static string UserRegistered = "Kullanıcı başarıyla kaydedildi";
         public static string AccessTokenCreated = "Access token başarıyla oluşturuldu";
         public static string AuthorizationDenied = "Yetkiniz yok";
+        #endregion
+
+        #region Notes
+        public static string NoteAdded="Not Eklendi";
+        public static string NoteUpdated = "Not Güncellendi";
+        public static string NoteDeleted = "Not Silindi";
+        public static string FilterByTopNotes = "Notlar filtrelendi";
+        public static string NoteListed = "Notlar listelendi";
+        #endregion
+
+        #region Training
+        public static string TrainingUpdated="Mesleki Uygulama Eğitimi Güncellendi";
+        public static string TrainingListed= "Mesleki Uygulama Eğitimi Listelendi";
+        public static string TrainingDeleted= "Mesleki Uygulama Eğitimi Silindi";
+        public static string TrainingAdded= "Mesleki Uygulama Eğitimi Eklendi";
+        #endregion
+
+        #region Staff Educations
+        public static string EducationAdded="Eğitim Bilgileri Eklendi";
+        public static string EducationListed= "Eğitim Bilgileri Listelendi";
+        public static string EducationUpdated= "Eğitim Bilgileri Güncellendi";
+        public static string EducatinDeleted= "Eğitim Bilgileri Silindi";
+        #endregion
+
+        #region Staff Job
+        public static string StaffJobAdded="Personel işi Eklendi";
+        public static string StaffJobUpdated="Personel işi güncellendi";
+        public static string StaffJobListed="Personel işleri listelendi";
+        public static string StaffJobDeleted="Personel işi Silindi";
+        #endregion
+
+        #region Staff
+        public static string StaffAdded="Personel Eklendi";
+        public static string StaffDeleted="Personel Silindi";
+        public static string StaffListed="Personeller listelendi";
+        public static string StaffUpdated="Personel Güncellendi";
+        #endregion
+        //wqeqwe
     }
 }

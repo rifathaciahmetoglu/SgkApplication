@@ -10,6 +10,6 @@ namespace Business.Abstract
         IResult Update(ProfessionalPracticeTraining practiceTraining);
         IResult Delete(ProfessionalPracticeTraining practiceTraining);
         IDataResult<List<ProfessionalPracticeTraining>> GetAll();
-        IDataResult<List<ProfessionalPracticeTraining>> GetById(int Id);
+        IDataResult<ProfessionalPracticeTraining>GetById(int Id);
     }
 }

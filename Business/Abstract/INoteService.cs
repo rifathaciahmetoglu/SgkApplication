@@ -10,6 +10,6 @@ namespace Business.Abstract
         IResult Update(Note note);
         IResult Delete(Note note);
         IDataResult<List<Note>> GetAll();
-        IDataResult<Note> GetByTopNotes(int Count);
+        IDataResult<List<Note>> GetByTopNotes(int Count);
     }
 }

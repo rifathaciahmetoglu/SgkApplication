@@ -10,6 +10,6 @@ namespace Business.Abstract
         IResult Update(StaffEducations staffEducations);
         IResult Delete(StaffEducations staffEducations);
         IDataResult<List<StaffEducations>> GetAll();
-        IDataResult<List<StaffEducations>> GetById(int id);
+        IDataResult<StaffEducations> GetById(int id);
     }
 }

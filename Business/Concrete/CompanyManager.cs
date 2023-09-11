@@ -21,7 +21,7 @@ namespace Business.Concrete
             _companyDal = companyDal;
         }
 
-        [SecuredOperation("admin")]
+        [SecuredOperation("admin,moderator")]
         [ValidationAspect(typeof(CompanyValidator))]
         public IResult Add(Company company)
         {
@@ -35,28 +35,35 @@ namespace Business.Concrete
             _companyDal.Add(company);
             return new Result(true, Messages.CompanyAdded);
         }
+
+        [SecuredOperation("admin,moderator")]
         public IResult Update(Company company)
         {
             _companyDal.Update(company);
             return new Result(true, Messages.CompanyUpdated);
         }
 
+        [SecuredOperation("admin,moderator")]
         public IResult Delete(Company company)
         {
             _companyDal.Delete(company);
             return new Result(true, Messages.CompanyDeleted);
         }
 
+        [SecuredOperation("admin,moderator")]
         public IDataResult<List<Company>> GetList()
         {
             return new SuccessDataResult<List<Company>>(_companyDal.GetAll(), Messages.CompanyListed);
         }
 
+
+        [SecuredOperation("admin,moderator")]
         public IDataResult<Company> GetById(int id)
         {
             return new SuccessDataResult<Company>(_companyDal.Get(c => c.Id == id));
         }
 
+        [SecuredOperation("admin,moderator")]
         public IDataResult<List<Company>> GetByShortName(string shortName)
         {
             return new SuccessDataResult<List<Company>>(_companyDal.GetAll(c => c.ShortName == shortName));
